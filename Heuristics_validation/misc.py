@@ -1,14 +1,14 @@
 import matplotlib.pyplot as plt
 import csv
 
-def csv_write_data(fields, data, name, n, w, N, i = 0):
-    with open("data/%s-n%d-w%d-N%d-%d.csv"%(name, n, w, N, i), "w", newline="") as csvfile:
+def csv_write_data(directory, fields, data, name, n, w, N, i = 0):
+    with open("%s%s-n%d-w%d-N%d-%d.csv"%(directory, name, n, w, N, i), "w", newline="") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fields)
         writer.writeheader()
         for row in data:
             writer.writerow(row)
             
-def plot_data(exp_data, theory_data, n, w, N, values):
+def plot_data(directory, exp_data, theory_data, n, w, N, values):
     fig, axs = plt.subplots(2, 2, sharex=True)
     fig.tight_layout(pad=2.0)
     axs_iter = 0
@@ -22,4 +22,4 @@ def plot_data(exp_data, theory_data, n, w, N, values):
         axs[axs_iter % 2, axs_iter // 2].set_yscale("log",base=2)
         axs_iter += 1
 
-    plt.savefig('data/comparison-n%d-w%d-N%d.png'%(n, w, N), dpi=600)
+    plt.savefig('%scomparison-n%d-w%d-N%d.png'%(directory, n, w, N), dpi=600)

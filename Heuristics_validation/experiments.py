@@ -30,8 +30,11 @@ C = 4.1
 N = int(ceil(C * binom(n, w)/(binom(w, w//2) * binom(n-w, w//2))) )
 
 # Data folder
-if not os.path.exists('data'):
-    os.mkdir('data')
+if not os.path.exists('data/'):
+    os.mkdir('data/')
+directory = 'data/n%d/'%(n)
+if not os.path.exists(directory):
+    os.mkdir(directory)
 
 # Multiple experiments
 exp_data = []
@@ -55,7 +58,7 @@ for j in range(exp_num):
             break
     
     # Write experimental data
-    misc.csv_write_data(fields, exp_data, "experiment", n, w, N, j+1)
+    misc.csv_write_data(directory, fields, exp_data, "experiment", n, w, N, j+1)
     
     exp_data.clear()
     del siever

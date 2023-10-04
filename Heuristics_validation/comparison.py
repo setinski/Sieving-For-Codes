@@ -41,8 +41,11 @@ C = 4.1
 N = int(ceil(C * binom(n, w)/(binom(w, w//2) * binom(n-w, w//2))) )
 
 # Data folder
-if not os.path.exists('data'):
-    os.mkdir('data')
+if not os.path.exists('data/'):
+    os.mkdir('data/')
+directory = 'data/n%d/'%(n)
+if not os.path.exists(directory):
+    os.mkdir(directory)
     
 # An experiment and corresponding theoretical prediction
 theory_data = []
@@ -65,14 +68,14 @@ for i in range(c):
     if exp_datum["ufound"]==0:
         break
     
-    # Write experimental data
-    misc.csv_write_data(fields, exp_data, "experiment", n, w, N)
+# Write experimental data
+misc.csv_write_data(directory, fields, exp_data, "experiment", n, w, N)
     
-    # Write theoretical prediction
-    misc.csv_write_data(fields, theory_data, "theory", n, w, N)
+# Write theoretical prediction
+misc.csv_write_data(directory, fields, theory_data, "theory", n, w, N)
     
 # Plot experimental data and theoretical prediction
 values = ["found", "ufound", "collision", "removed"]
-misc.plot_data(exp_data, theory_data, n, w, N, values)
+misc.plot_data(directory, exp_data, theory_data, n, w, N, values)
 
 
