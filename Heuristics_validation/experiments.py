@@ -1,3 +1,7 @@
+# Compares and visualizes theoretical prediction and experimental data.
+# To run: python comparison.py $n $w $k $i
+#    default: $n = 256, $w = 6, $k = 0, $i = 10
+
 from numpy import random
 from middleware import SieveISDlib
 from scipy.special import binom
