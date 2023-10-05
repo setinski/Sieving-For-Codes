@@ -1,6 +1,6 @@
 # Sieving For Codes
 
-In this project, we asymptotic analyze of the sieving-style algorithm for solving decoding problems. The numerical results accompany the theoretical results presented in the corresponding paper.
+In this project, we provide asymptotic analyisis of the sieving-style algorithm for solving decoding problems. The numerical results accompany the theoretical results presented in the corresponding paper.
 
 ## Project's dependencies
 
