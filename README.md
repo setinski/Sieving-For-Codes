@@ -1,10 +1,10 @@
 # Sieving For Codes
 
-In this project, we provide asymptotic analyisis of the sieving-style algorithm for solving decoding problems. The numerical results accompany the theoretical results presented in the corresponding paper.
+In this project, we provide asymptotic analyisis of the sieving-style algorithm for solving decoding problems and experimental validation of the heuristics required for instantiating the ISD algorithm containing the sieving algorithm as its sub-routine. The numerical results accompany the theoretical results presented in the corresponding paper.
 
 ## Project's dependencies
 
-The heuristics validation experiments require CPU that supports Advanced Vector Extensions (AVX) and Python 3.
+The heuristics validation experiments require CPU that supports Advanced Vector Extensions (AVX). Both the heuristic validation experiments as well  and Python 3.
 
 ## Build the siveisd library (for Linux distributions)
 <pre translate="no" dir="ltr" is-upgraded="">make
