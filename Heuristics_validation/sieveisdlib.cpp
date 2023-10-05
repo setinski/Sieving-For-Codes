@@ -1,3 +1,4 @@
+/*Library that implements experiments on heuristics.*/
 #include <math.h>
 #include <iostream>
 #include <vector>
@@ -18,7 +19,6 @@ typedef vector<binvec> binmat;
 
 size_t n, c;        // The length n and codimension c of the code.
 binmat H;           // The parity check of the code
-
 
 // Redefining it for abusing builtins
 inline int64_t popcnt(binvec& t)
@@ -46,7 +46,6 @@ inline int64_t AND_popcnt(const binvec& t, const binvec&  e)
 return ham;
 }
 
-
 inline int64_t XOR_popcnt(const binvec& t, const binvec&  e)
 {
     int64_t ham = 0;
@@ -59,7 +58,6 @@ inline int64_t XOR_popcnt(const binvec& t, const binvec&  e)
     }
 return ham;
 }
-
 
 inline bool parity_check(const binvec& t, const binvec& h)
 {
@@ -80,6 +78,7 @@ inline binvec sample(uint64_t w)
     assert(popcnt(v) == w);
     return v;
 }
+
 unordered_set<binvec> L;
 // Initialize a list with H random vectors of weight w
 void initialize_list(uint64_t w, uint64_t N)
@@ -107,8 +106,6 @@ void sieve_step(uint64_t w, uint64_t N, uint64_t s, long int*stats)
         L0.emplace(*i);
         i = L.erase(i);
     }
-
-
     // Then sieve pairs of parity 1
     for (auto i = L0.begin(); i != L0.end(); ++i) {
         for (auto j = L0.begin(); j != i; ++j) {
@@ -118,8 +115,6 @@ void sieve_step(uint64_t w, uint64_t N, uint64_t s, long int*stats)
             R.emplace(*i ^ *j);
         }
     }
-
-
     // Then sieve pairs of parity 1
     for (auto i = L.begin(); i != L.end(); ++i) {
         for (auto j = L.begin(); j != i; ++j) {
@@ -155,9 +150,6 @@ void sieve_step(uint64_t w, uint64_t N, uint64_t s, long int*stats)
     stats[5] = collision;
     stats[6] = to_remove;
 }
-
-
-
 
 extern "C" 
 {
