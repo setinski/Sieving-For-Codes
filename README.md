@@ -1,6 +1,6 @@
 # Sieving For Codes
 
-In this project, we provide an asymptotic analyisis of the sieving-style algorithm for solving decoding problems (SievingISD_asymptotic_optimization.ipynb) and experimental validation of the heuristics required for instantiating sieving algorithm as a sub-routine of an ISD algorithm. The numerical results accompany the theoretical results presented in the corresponding paper.
+In this project, we provide an asymptotic analyisis of the sieving-style algorithm for solving decoding problems and experimental validation of the heuristics required for instantiating sieving algorithm as a sub-routine of an ISD algorithm. The code for the first is given in  SievingISD_asymptotic_optimization.ipynb Python notebook, while the code for the experimental validation is given in the Heuristic_validation directory. The numerical results accompany the theoretical results presented in the corresponding paper.
 
 ## Project's dependencies
 
