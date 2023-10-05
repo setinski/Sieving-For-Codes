@@ -1,3 +1,4 @@
+# Theoretical predictions
 import math
 from scipy.special import binom
 
