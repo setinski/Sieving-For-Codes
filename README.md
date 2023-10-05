@@ -18,7 +18,7 @@ python comparison.py $n $w $k $i
 </pre>
 where $n is the code length, $w is the weight of the error, and $k is the code dimension. If no parameters are provided, $n = 256, $w = 6, and $k = 0.
 
-To obtain the results and visualization of the comparison between the theoretical prediction and the experimental data, run
+To obtain the results on the experimental data, run
 <pre translate="no" dir="ltr" is-upgraded="">
 python experiments.py $n $w $k $i
 </pre>
