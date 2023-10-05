@@ -1,3 +1,4 @@
+# middleware.py: a python wrapper for the c++ sieveisdlib.cpp
 from numpy import zeros, random
 import ctypes
 from math import ceil
@@ -14,12 +15,6 @@ def c_long_ptr(x):
 
 def ham(v):
     return sum(v)
-
-
-
-# CodeRedLib: a python wrapper for the c++ csieveisdlib.cpp
-
-
 
 class SieveISDlib(object):
     def __init__(self, H, seed=None):
