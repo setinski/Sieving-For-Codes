@@ -6,10 +6,12 @@ In this project, we provide an asymptotic analyisis of the sieving-style algorit
 
 Both the asymptotic analysis and the heuristic validation experiments require Python 3. In addition to that, the heuristics validation experiments require CPU that supports Advanced Vector Extensions (AVX). 
 
-[comment]: # ## Build the siveisd library (for Linux distributions)
-[comment]: # <pre translate="no" dir="ltr" is-upgraded="">make
-[comment]: # </pre>
+<!---
+## Build the siveisd library (for Linux distributions)
 
+<pre translate="no" dir="ltr" is-upgraded="">make
+</pre>
+---> 
 ## Run the experiments
 
 To obtain the results and visualization of the comparison between the theoretical prediction and the experimental data, run
@@ -29,4 +31,3 @@ The results of the experiments and the comparison are recorded in ./Data/n$n dir
 
 ### Authors
 anonymous
-
