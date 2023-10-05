@@ -1,3 +1,4 @@
+# Functions for writing to .csv files and plotting the data
 import matplotlib.pyplot as plt
 import csv
 
