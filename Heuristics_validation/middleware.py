@@ -1,4 +1,4 @@
-# middleware.py: a python wrapper for the c++ sieveisdlib.cpp
+# A python wrapper for the c++ sieveisdlib.cpp
 from numpy import zeros, random
 import ctypes
 from math import ceil
