@@ -1,5 +1,5 @@
 # Compares and visualizes theoretical prediction and experimental data.
-# Run: python comparison.py $n $w $k
+# To run: python comparison.py $n $w $k
 #    default: $n = 256, $w = 6, $k = 0
 
 from numpy import random
