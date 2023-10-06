@@ -25,7 +25,7 @@ To obtain the results on the experimental data, run
 <pre translate="no" dir="ltr" is-upgraded="">
 python experiments.py $n $w $k $i
 </pre>
-where $n is the code length, $w is the weight of the error, $k is the code dimension, and $i is the number of experiments. If no parameters are provided, n = 256, w = 6, k = 0, and i = 10.
+where n is the code length, w is the weight of the error, $k is the code dimension, and $i is the number of experiments. If no parameters are provided, n = 256, w = 6, k = 0, and i = 10.
 
 ## Results of the experiments
 
