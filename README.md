@@ -8,7 +8,7 @@ Both the asymptotic analysis and the heuristic validation experiments require Py
 
 ## Build the siveisd library (for Linux distributions)
 
-To build the siveisd library for $n
+To build the siveisd library for n
 <pre translate="no" dir="ltr" is-upgraded="">make sieveisdlib LENGTH=$n
 </pre>
 where n is the code length. If no parameters are provided, n = 256.
