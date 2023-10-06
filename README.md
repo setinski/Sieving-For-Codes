@@ -4,11 +4,15 @@ In this project, we provide an asymptotic analysis of the sieving-style algorith
 
 ## Project's dependencies
 
-Both the asymptotic analysis and the heuristic validation experiments require Python 3. In addition to that, the heuristics validation experiments require a CPU that supports Advanced Vector Extensions (AVX). 
+Both the asymptotic analysis and the heuristic validation experiments require Python 3. In addition to that, the heuristics validation experiments require a CPU that supports Advanced Vector Extensions (AVX).
 
-## Build the siveisd library (for Linux distributions)
+## Asymptotic plots
 
-To build the siveisd library for n
+All asymptotic plots can be reproduced by running SievingISD_asymptotic_optimization.ipynb script.
+
+## Build the sieveisd library (for Linux distributions)
+
+To build the sieveisd library for n
 <pre translate="no" dir="ltr" is-upgraded="">make sieveisdlib LENGTH=$n
 </pre>
 where n is the code length. If no parameters are provided, n = 256.
