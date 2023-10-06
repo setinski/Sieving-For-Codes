@@ -27,6 +27,7 @@ python experiments.py $n $w $k $i
 </pre>
 where $n is the code length, $w is the weight of the error, $k is the code dimension, and $i is the number of experiments. If no parameters are provided, $n = 256, $w = 6, $k = 0, and $i = 10.
 
+## Results of the experiments
 
 The results of the experiments and the comparison are recorded in the ./Data/n$n directory.
 
