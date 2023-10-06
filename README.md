@@ -11,7 +11,7 @@ Both the asymptotic analysis and the heuristic validation experiments require Py
 To build the siveisd library for $n
 <pre translate="no" dir="ltr" is-upgraded="">make sieveisdlib LENGTH=$n
 </pre>
-where $n is the code length. If no parameters are provided, $n = 256.
+where n is the code length. If no parameters are provided, n = 256.
 
 ## Run the experiments
 
@@ -19,13 +19,13 @@ To obtain the results and visualization of the comparison between the theoretica
 <pre translate="no" dir="ltr" is-upgraded="">
 python comparison.py $n $w $k $i
 </pre>
-where $n is the code length, $w is the weight of the error, and $k is the code dimension. If no parameters are provided, $n = 256, $w = 6, and $k = 0.
+where $n is the code length, $w is the weight of the error, and $k is the code dimension. If no parameters are provided, n = 256, w = 6, and k = 0.
 
 To obtain the results on the experimental data, run
 <pre translate="no" dir="ltr" is-upgraded="">
 python experiments.py $n $w $k $i
 </pre>
-where $n is the code length, $w is the weight of the error, $k is the code dimension, and $i is the number of experiments. If no parameters are provided, $n = 256, $w = 6, $k = 0, and $i = 10.
+where $n is the code length, $w is the weight of the error, $k is the code dimension, and $i is the number of experiments. If no parameters are provided, n = 256, w = 6, k = 0, and i = 10.
 
 ## Results of the experiments
 
