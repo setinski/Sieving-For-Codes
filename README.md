@@ -37,6 +37,9 @@ The results of the experiments and the comparison are recorded in the ./Data/n$n
 
 ### Authors
 Léo Ducas, Centrum Wiskunde & Informatica, Leiden University
+
 Andre Esser, Technology Innovation Institute
+
 Simona Etinski, Centrum Wiskunde & Informatica
+
 Elena Kirshanova, Technology Innovation Institute, Immanuel Kant Baltic Federal University
