@@ -36,4 +36,7 @@ where n is the code length, w is the weight of the error, k is the code dimensio
 The results of the experiments and the comparison are recorded in the ./Data/n$n directory.
 
 ### Authors
-anonymous
+Léo Ducas, Centrum Wiskunde & Informatica, Leiden University
+Andre Esser, Technology Innovation Institute
+Simona Etinski, Centrum Wiskunde & Informatica
+Elena Kirshanova, Technology Innovation Institute, Immanuel Kant Baltic Federal University
