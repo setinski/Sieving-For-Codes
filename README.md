@@ -9,8 +9,10 @@ Both the asymptotic analysis and the heuristic validation experiments require Py
 The asymptotic optimization requires the python packages progressbar, numpy and scipy you can install those using the terminal command
 
 <pre translate="no" dir="ltr" is-upgraded="">
-pip3 install progressbar numpy scipy
+pip3 install -r requirements.txt
 </pre>
+
+or just run the first cell of the jupyter notebook.
 
 ## Asymptotic plots
 
